@@ -1,0 +1,40 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="hotelmanagement.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1 align ="center">HOTEL CLARK</h1>
+        <br /><br />
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <br /><br />
+        <table class="auto-style1">
+        <tr>
+            <td>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="BookRoom.aspx">Book a room</asp:HyperLink>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="ViewBookings.aspx">View Bookings</asp:HyperLink>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Update.aspx">Update Booking</asp:HyperLink>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="Cancel.aspx">Cancel Booking</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
